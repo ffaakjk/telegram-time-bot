@@ -291,4 +291,6 @@ app.add_handler(MessageHandler(filters.LOCATION,location))
 
 print("BOT STARTED")
 
-app.run_polling()
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(app.run_polling())
